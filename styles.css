@@ -39,6 +39,7 @@ form h2{
 form .form-item{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 form .form-item input{
     padding: 8px 4px;
@@ -81,4 +82,24 @@ form .form-item.error span{visibility: visible;}
 form .form-item.success input{
     border: 2px solid green;
 
+}
+
+.form-item i{
+    position: absolute;
+    top: 28px;
+    right: 5px;
+}
+.form-item .fa-check-circle{
+    color: green;
+    visibility: hidden;
+}
+.form-item .fa-exclamation-circle{
+    color: red;
+    visibility: hidden;
+}
+.form-item.success .fa-check-circle{
+    visibility: visible;
+}
+.form-item.error .fa-exclamation-circle{
+    visibility: visible;
 }
